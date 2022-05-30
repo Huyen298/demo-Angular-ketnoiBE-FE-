@@ -1,0 +1,14 @@
+<h1>Xoá</h1>
+<form [formGroup]="animalForm" (ngSubmit)="delete()" >
+  <table>
+    <tr>
+      <td>Tên :</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Xoá</button></td>
+      <td><button><a routerLink="">Quay lại danh sách</a></button></td>
+    </tr>
+  </table>
+</form>

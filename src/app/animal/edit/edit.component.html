@@ -1,0 +1,21 @@
+<h1>Edit</h1>
+<a routerLink="">Danh sách </a>
+<br>
+<br>
+<form [formGroup]="animalForm" (ngSubmit)="update()">
+<div>
+  <label for="name">Tên </label>
+  <input type="text" id="name" formControlName="name" >
+</div>
+<div>
+  <label for="color">Màu sắc</label>
+  <input type="text" id="color" formControlName="color">
+</div>
+<div>
+  <label for="price">Giá</label>
+  <input type="text" id="price" formControlName="price" >
+</div>
+<div>
+  <button>Edit</button>
+</div>
+</form>

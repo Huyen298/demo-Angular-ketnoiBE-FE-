@@ -1,0 +1,30 @@
+<h1>Danh sách </h1>
+<a routerLink="/create">Thêm mới</a>
+<table border="1">
+  <tr>
+    <th>STT</th>
+    <th>Tên</th>
+    <th>Màu sắc</th>
+    <th>Giá</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let animal of animals; index as i">
+    <td>{{i+1}}</td>
+    <td>{{animal.name}}</td>
+    <td>{{animal.color}}</td>
+    <td>{{animal.price}}</td>
+    <td><a routerLink="edit/{{animal.id}}">Edit</a></td>
+    <td><a routerLink="delete/{{animal.id}}">Delete</a></td>
+  </tr>
+</table>
+<!--<br>-->
+<!--<input type="text" id="id" placeholder="id"  [(ngModel)]="animal.id">-->
+<!--<input type="text" id="name" placeholder="name"  [(ngModel)]="animal.name">-->
+<!--<input type="text" id="color" placeholder="color"  [(ngModel)]="animal.color">-->
+<!--<input type="text" id="price" placeholder="price"  [(ngModel)]="animal.price">-->
+<!--<h1>Demo</h1>-->
+<!--<p>{{animal.id}}</p>-->
+<!--<p>{{animal.name}}</p>-->
+<!--<p>{{animal.color}}</p>-->
+<!--<p>{{animal.price}}</p>-->
